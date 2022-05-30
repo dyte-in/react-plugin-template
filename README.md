@@ -23,6 +23,7 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Publish Your Plugin](#publish-your-plugin)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -40,7 +41,7 @@ Plugin SDK let's you build custom plugins that work with all of Dyte's core SDKs
 ### Installation
 - Clone the repo
   ```
-  git clone https://github.com/dyte-in/plugin-template-react.git
+  git clone https://github.com/dyte-in/react-plugin-template.git
   
   cd plugin-template-react
   ```
@@ -58,6 +59,11 @@ Plugin SDK let's you build custom plugins that work with all of Dyte's core SDKs
 Once you have started the dev server using `npm start`, open http://staging.dyte.in, and use the LocalhostDev plugin. You will now be able to see your plugin inside the meeting stage
 **(this will be accessible only from localhost:5000)**.
 
+## Publish Your Plugin
+You can use Dyte CLI to create and publish plugins. 
+- Installation: https://docs.dyte.io/cli/installation
+- Configuration: https://docs.dyte.io/cli/getting-started
+- Publishing Plugins: https://docs.dyte.io/cli/plugins
 
 The complete documentation and usage for Plugin SDK can be found at: https://www.npmjs.com/package/@dytesdk/plugin-sdk#usage
 
