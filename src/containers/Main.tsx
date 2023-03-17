@@ -9,15 +9,15 @@ const Main = () => {
   const plugin = useDytePlugin();
 
   useEffect(() => {
-    console.log(plugin);
+    if (!plugin) return;
 
     const getSelf = async () => {
-        const self = await plugin?.getPeerInfo();
+        const self = await plugin?.room.getPeer();
         console.log(self);
     };
 
     const sendChatMessage = () => {
-        plugin?.sendChatMessage({
+        plugin?.room.sendChatMessage({
             type: 'text',
             message: 'This is my awesome plugin!'
         });

@@ -13,10 +13,10 @@ import DytePlugin from '@dytesdk/plugin-sdk';
 /**
  * Initialize plugin and store in `plugin` state
  */
-const initPlugin = async (
+const initPlugin = (
     setPlugin: Dispatch<SetStateAction<DytePlugin | undefined>>
     ) => {
-    const plugin = await DytePlugin.init();
+    const plugin = DytePlugin.init();
     setPlugin(plugin);
 }
 
